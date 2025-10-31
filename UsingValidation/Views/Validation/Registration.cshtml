@@ -5,13 +5,119 @@
 
 <!DOCTYPE html>
 
-<html>
+<html> 
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div> 
-    </div>
+    <form>
+        <div class="header-title-semititle">
+            <h1>Finals Laboratory Activity 1</h1>
+            <p>Using Validation. Create a simple registration that validates the user input.</p>
+        </div>
+        <div class="inputs">
+            <div class="line-section">
+                <span class="label-input"><label>First Name</label><input type="text" placeholder="ex. Lance Kent Geoffrey" required /></span>
+                <span class="label-input"><label>First Name</label><input type="text" placeholder="ex. Magollado" required /></span>
+            </div>
+            <div class="second-line-section">
+                <span class="label-input"><label>Age</label><input type="number" placeholder="ex. 22" required /></span>
+                <div class="gender-section">
+                    <p>Gender</p>
+                    <div class="genders">
+                        <span class="radio-item">
+                            <input type="radio" name="gender" value="male" />
+                            <label for="male">Male</label>
+                        </span>
+                        <span class="radio-item">
+                            <input type="radio" name="gender" value="female" /><label for="female">Female</label>
+                        </span>
+                    </div>
+                </div>
+                <span class="label-input"><label>Mobile Number</label><input type="tel" placeholder="ex. +639263226163" required /></span>
+            </div>
+            <div class="line-section">
+                <span class="label-input"><label>Email</label><input class="full-input-width" type="email" placeholder="ex. lance.kent.magollado@gmail.com" required /></span>
+            </div>
+            <div class="line-section">
+                <span class="label-input"><label>Address</label><input class="full-input-width" type="email" placeholder="ex. House No., Street, Barangay, Municipality, Province" required /></span>
+                <span class="label-input-dropdown">
+                    <label>Blood Type</label><select>
+                        <option selected disabled hidden>Select Blood Type</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                </span>
+            </div>
+            <div class="line-section">
+                <span class="label-input-dropdown">
+                    <label>Citizenship</label><select style="width:200px;" required>
+                        <option selected disabled hidden>Select Citizenship</option>
+                        <option>Filipino</option>
+                        <option>American</option>
+                        <option>Japanese</option>
+                        <option>Chinese</option>
+                        <option>Italian</option>
+                    </select>
+                </span>
+                <div class="gender-section">
+                    <p>Marital Status</p>
+                    <div class="genders">
+                        <span class="radio-item">
+                            <input type="radio" name="status" value="single" />
+                            <label for="male">Single</label>
+                        </span>
+                        <span class="radio-item">
+                            <input type="radio" name="status" value="married" /><label for="married">Married</label>
+                        </span>
+                        <span class="radio-item">
+                            <input type="radio" name="status" value="divorced" /><label for="divorced">Divorced</label>
+                        </span>
+                        <span class="radio-item">
+                            <input type="radio" name="status" value="separated" /><label for="separated">Separated</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="last-line-section">
+                <p>Educational Attainment</p>
+                <div class="checkbox-inputs">
+                    <div class="checkbox">
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Undergraduate</label>
+                        </span>
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Graduate</label>
+                        </span>
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Undergraduate</label>
+                        </span>
+                    </div>
+                    <div class="checkbox">
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Undergraduate</label>
+                        </span>
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Undergraduate</label>
+                        </span>
+                        <span class="label-checkbox">
+                            <input type="checkbox" /><label> High School Undergraduate</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
