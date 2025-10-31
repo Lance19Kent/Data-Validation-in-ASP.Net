@@ -39,6 +39,11 @@ input[type="checkbox"] {
     height: 16px;
     cursor: pointer;
 }
+
+select:focus {
+    border: 1px solid var(--valued-item-color);
+}
+
 input[type="radio"] {
     border: 1px solid var(--input-stroke-color);
     accent-color: var(--valued-item-color);
@@ -51,6 +56,7 @@ input[type="radio"] {
     gap:8px;
     align-items:center;
 }
+
 input {
     background-color: transparent;
     border: 1px solid var(--input-stroke-color);
@@ -68,7 +74,9 @@ input::placeholder{
     font-size:14px;
 }
 
-
+input:focus{
+    border: 1px solid var(--valued-item-color);
+}
 
 form {
     width: 73%;
@@ -76,6 +84,7 @@ form {
     background-color: var(--bg-color);
     padding-inline: 180px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 form .header-title-semititle h1{
@@ -137,8 +146,9 @@ select {
     width: 170px;
     height: 40px;
     padding-left: 20px;
-    border-radius:4px;
-    font-size:14px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
 }
 
 .checkbox{
@@ -148,4 +158,28 @@ select {
 }
 .checkbox-inputs{
     display:flex;
+    justify-content:space-between;
+}
+
+.last-line-section{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+hr {
+    border:2px solid #3D3D3D;
+}
+
+button {
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    background-color: var(--valued-item-color);
+    border:1px solid var(--valued-item-color);
+    transition:0.3s ease all
+}
+
+button:hover{
+    background-color:var(--bg-color);
+    color:var(--valued-item-color);
 }
